@@ -106,7 +106,7 @@
                     return;
                 doSearch();
             }
-
+            
 
         }
 
@@ -117,10 +117,7 @@
             suggest.style.display = 'none';
         }
 
-        map.Search.placeholder(
-            document.getElementById('result')
-        );
-
+        
 
     </script>
 </body>

@@ -51,7 +51,7 @@
                 </div>
 
                 <div class="col-md-4 py-3 py-md-0">
-                    <input id=search type="text" class="form-control" placeholder="Enter Search" required>
+                    <input id=search class="form-control" placeholder="Enter Search" required>
                     <div id="result"></div>
                 </div>
 
@@ -106,7 +106,8 @@
                     return;
                 doSearch();
             }
-            
+
+
 
         }
 
@@ -114,10 +115,10 @@
             map.Search.search(search.value, {
                 area: 44,
             });
-            suggest.style.display = 'none';
+
         }
 
-        
+
 
     </script>
 </body>

@@ -52,7 +52,7 @@
 
                 <div class="col-md-4 py-3 py-md-0">
                     <input id=search class="form-control" placeholder="Enter Search" required>
-                    <div id="result"></div>
+                    <div class="card" id="result"></div>
                 </div>
 
 
@@ -65,12 +65,6 @@
     <!-- About End -->
 
 
-
-
-
-
-
-
     <!-- Footer -->
     <?php require(__DIR__ . "/include/footer.php") ?>
 
@@ -80,47 +74,7 @@
     ?>
 
     <script src="https://api.longdo.com/map/?key=ef4403429ef6547092619fe33deea6c0"></script>
-    <script>
-        var map;
-        var search;
-        function init() {
-            map = new longdo.Map({
-                layer: [
-                    longdo.Layers.GRAY,
-                    longdo.Layers.TRAFFIC
-                ],
-                zoom: 9,
-                placeholder: document.getElementById('maps'),
-                language: 'th',
-                lastView: false
-            });
-            map.location(longdo.LocationMode.Geolocation);
-            search = document.getElementById('search');
-
-            map.Search.placeholder(
-                document.getElementById('result')
-            );
-
-            search.onkeyup = function (event) {
-                if ((event || window.event).keyCode != 13)
-                    return;
-                doSearch();
-            }
-
-
-
-        }
-
-        function doSearch() {
-            map.Search.search(search.value, {
-                area: 44,
-            });
-
-        }
-
-
-
-    </script>
+    <script src="assets/script.js"></script>
 </body>
 
 </html>

@@ -57,8 +57,7 @@ async function resultSearch() {
     });
     const errors = `<div class="text-center alert alert-danger" role="alert">
                         ไม่พบรายการที่ค้นหา "${search.value}"
-                    </div>`;
-    if (html === "") console.log(true);
+                    </div>`
     result = `<div class="list-group">
                         ${html === "" ? errors : html}
                     </div>`;

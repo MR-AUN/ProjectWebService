@@ -8,7 +8,6 @@ function init() {
     language: "th",
     lastView: false,
   });
-  map.location(longdo.LocationMode.Geolocation);
   search = document.getElementById("search");
 
   search.onkeyup = function (event) {
@@ -60,7 +59,6 @@ async function resultSearch() {
     result = `<div class="list-group">
                         ${html}
                     </div>`;
-    console.log(result);
     document.getElementById("result").innerHTML = result;
   });
 }

@@ -45,7 +45,7 @@ async function resultSearch() {
         clickable: true,
         popup: {
           title: list.name,
-          detail: `${list.address}<br><a href="https://www.google.com/" class="class="btn btn-primary"">hello</a>`,
+          detail: `${list.address}<br><div class="fb-share-button" data-href="https://map.longdo.com/p/${list.id}/info" data-layout="" data-size=""><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmap.longdo.com%2Fp%2F${list.id}%2Finfo&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">แชร์</a></div>`,
         },
       });
       map.Overlays.add(marker);

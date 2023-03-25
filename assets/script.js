@@ -3,19 +3,18 @@ var search;
 function init() {
   map = new longdo.Map({
     layer: [longdo.Layers.GRAY, longdo.Layers.TRAFFIC],
-    zoom: 9,
+    zoom: 12,
     placeholder: document.getElementById("maps"),
     language: "th",
     lastView: false,
   });
   search = document.getElementById("search");
-
+  map.location({ lon: 103.15429866313934, lat: 16.009392200689117 }, true);
   search.onkeyup = function (event) {
     if ((event || window.event).keyCode != 13) return;
     resultSearch();
   };
 }
-
 
 // Api data
 async function resultSearch() {
@@ -56,8 +55,12 @@ async function resultSearch() {
                                             ${list.address}
                                         </button> `;
     });
+    const errors = `<div class="text-center alert alert-danger" role="alert">
+                        ไม่พบรายการที่ค้นหา "${search.value}"
+                    </div>`;
+    if (html === "") console.log(true);
     result = `<div class="list-group">
-                        ${html}
+                        ${html === "" ? errors : html}
                     </div>`;
     document.getElementById("result").innerHTML = result;
   });

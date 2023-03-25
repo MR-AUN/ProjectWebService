@@ -33,10 +33,11 @@
     </div>
     <!-- Home Section End -->
 
-<!-- SDK Facebook Button Share -->
+    <!-- SDK Facebook Button Share -->
 
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v16.0" nonce="KpoR8s4l"></script>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v16.0"
+        nonce="KpoR8s4l"></script>
 
 
     <!-- Map Start -->
@@ -55,7 +56,11 @@
 
                 <div class="col-md-4 py-3 py-md-0">
                     <input id=search class="form-control" placeholder="Enter Search" required>
-                    <div class="card" id="result"></div>
+                    <div class="card" id="result">
+                        <div class="text-center alert alert-light" role="alert">
+                            สามารถค้นหารายการสถานที่ได้
+                        </div>
+                    </div>
                 </div>
 
 

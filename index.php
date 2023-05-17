@@ -81,7 +81,7 @@
     require("assets/js.php");
     ?>
 
-    <script src="https://api.longdo.com/map/?key=ef4403429ef6547092619fe33deea6c0"></script>
+    <script src="https://api.longdo.com/map/?key=[key]"></script>
     <script src="assets/script.js"></script>
 </body>
 
